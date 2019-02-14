@@ -1,0 +1,268 @@
+
+body {
+  background-color: black;
+}
+
+/* Nav Bar */
+.nav-wrapper {
+  background-color: black;
+}
+
+.BEShare {
+  color: black;
+}
+
+.fa {
+  margin-right:5px;
+  width:50px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+ }
+ 
+ .fa:hover {
+  opacity: 0.7;
+ }
+ 
+ .fa-facebook {
+  background: #3B5998;
+  color: white;
+ }
+ 
+ .fa-google {
+  background: red;
+  color: white;
+ }
+
+ .fa-twitter {
+  background: #55ACEE;
+  color: white;
+ }
+ 
+ .fa-linkedin {
+  background:darkblue;
+  color:white;
+ }
+
+
+/* Body */
+h1, h2, h5 {
+  font-family: 'Rock Salt', cursive;
+  letter-spacing: 5px;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h5 {
+  font-size: 3em;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.button-class {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#ingredient-validation, #cuisine-validation {
+  color: rgb(250, 74, 103);
+  font-style: italic;
+}
+
+#heading-container{
+  margin-top: 87px;
+  background-color: rgba(255, 255, 255, 0.092);
+}
+
+.parallax-container {
+  min-height: 600px;
+}
+
+.parallax-image {
+  transform: translate3d(-50%, 734.42px, 0px);
+}
+
+#trending-cuisine-container {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.trending-cuisine-header, .favorites-header {
+  text-align: center;
+}
+
+#trending-cuisine-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.cuisine-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#cuisine-title {
+  margin-bottom: 50px;
+}
+
+.ingredient-container, .cuisine-container, .favorites-container {
+  margin: 100px;
+  padding: 20px;
+  background-color: white;
+}
+
+.ingredient-header {
+  text-align: center;
+}
+
+.ingredient-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.ingredient-card {
+  width: 100%;
+  margin: 10px;
+}
+
+#ingredient-search-button {
+  margin-bottom: 40px;
+}
+
+#cuisine-search-button{
+  margin: 0 auto;
+}
+
+.link-container {
+  text-align: center;
+}
+
+#cuisine-search-button {
+  margin: 30px;
+}
+
+#favorites-content {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+/* FOOTER*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 7px 0px 7px 0px;
+  text-align: center;
+  font-size: small;
+  margin-top: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 4000px;
+  width: 90%;
+}
+
+#recipe-url-0,
+#recipe-url-1,
+#recipe-url-2,
+#save-recipe-0,
+#save-recipe-1,
+#save-recipe-2 {
+  color:white;
+}
+
+#popup-ingredients-0 li:before,
+#popup-ingredients-1 li:before,
+#popup-ingredients-2 li:before {
+    content: "• "; /* Insert content that looks like bullets */
+}
+
+.recipe-button-search, 
+.cuisine-button {  
+  color:white
+}
+
+.favorite-card {
+  width: 31%;
+  display: inline-block;
+}
+
+.ingredient-start {
+  display: none;
+}
+
+.ingredient-img {
+  height: 300px;
+}
+
+.back-top-button {
+  text-align: center;
+  color: darkgrey;
+}
+
+.back-top-button:hover {
+  text-align: center;
+  color: turquoise;
+}
+
+/* Cell phone display */
+@media only screen and (max-width: 391px) {
+
+  .ingredient-body, .cuisine-body, #favorites-body, #heading-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .btn-large, .btn-small {
+      margin: 5px;
+  }
+
+  .ingredient-container, .cuisine-container, .favorites-container {
+    margin: 10px;
+  }
+
+  .favorite-card {
+    width: 100%;
+  }
+  
+  .ingredient-img {
+    height: 400px
+  }
+
+}
